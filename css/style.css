@@ -161,3 +161,25 @@ main {
 }
 
 /* Hero ends */
+
+/* Footer Starts */
+
+footer {
+    border-top: 1px solid #979797
+}
+
+.footer-section .ft-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 0;
+}
+
+.ft-container .ft-privacy-terms-box {
+    display: flex;
+    gap: 5em;
+}
+
+.ft-privacy-terms-box span a {
+    color: var(--Text-color);
+}

@@ -24,12 +24,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-</head>
-<body>
+  </head>
+  <body>
+    <!-- Header section starts  -->
 
-  <!-- Header section starts  -->
-  
-    <div class="body">
       <header class="header">
         <nav class="navbar">
           <div class="logo-box">
@@ -120,35 +118,80 @@
         </nav>
       </header>
 
-      <div class="hero">
-        <div class="left">
-          <h2>Status:</h2>
-          <img src="Assets/on.png" alt="on" />
-          <p>
-            NB: The light status information provided on this website is
-            intended for reference purposes only. While we strive to offer
-            accurate and up-to-date data, we cannot guarantee its absolute
-            precision.{" "}
-          </p>
-        </div>
-        <div class="right">
-          <img src="Assets/light.png" alt="light" />
-        </div>
-      </div>
-      <div class="group">
-        <h2>Light History</h2>
-        <p>Took Light</p>
-        <p>12:30AM 12/07/2023</p>
-        <p>Brought Light</p>
-        <p>2:30AM 12/07/2023</p>
-        <p>Took Light</p>
-        <p>2:30AM 12/07/2023</p>
-      </div>
+      <!-- Header section ends  -->
+
+      <!-- Hero section starts -->
+
+      <main>
+        <section class="hero-section">
+          <div class="sec-container">
+            <div class="txt-box">
+              <div class="first-txt-box">
+                <span class="status"
+                  >Status:
+                  <img
+                    id=""
+                    class="status-value"
+                    src="assets/status-on.png"
+                    alt=""
+                /></span>
+                <p>
+                  NB: The light status information provided on this website is
+                  intended for reference purposes only. While we strive to offer
+                  accurate and up-to-date data, we cannot guarantee its absolute
+                  precision.
+                </p>
+              </div>
+              <div class="second-txt-box">
+                <h2>Light History</h2>
+                <div class="brought-box">
+                  <p class="history-ptag">Brought Light</p>
+                  <span id="" class="brtk-time">12:30AM</span>
+                  <span id="" class="brtk-date">12/07/2023</span>
+                </div>
+                <div class="took-box">
+                  <p class="history-ptag">Took Light</p>
+                  <span id="" class="brtk-time">12:30AM</span>
+                  <span id="" class="brtk-date">12/07/2023</span>
+                </div>
+                <div class="brought-box">
+                  <p class="history-ptag">Brought Light</p>
+                  <span id="" class="brtk-time">12:30AM</span>
+                  <span id="" class="brtk-date">12/07/2023</span>
+                </div>
+                <div class="took-box">
+                  <p class="history-ptag">Took Light</p>
+                  <span id="" class="brtk-time">12:30AM</span>
+                  <span id="" class="brtk-date">12/07/2023</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="img-box">
+              <img src="assets/light-bulb-on.png" alt="" />
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer section starts -->
+
       <footer>
-        <h3 class="all">© 2023 Sensory. All Rights Reserved.</h3>
-        <h3 class="privacy">Privacy Policy</h3>
-        <h3 class="terms">Terms & Conditions</h3>
+        <section class="footer-section">
+          <div class="ft-container">
+            <div class="ft-copywrite-box">
+              <p>© 2023 Sensory. All Rights Reserved.</p>
+            </div>
+
+            <div class="ft-privacy-terms-box">
+              <span><a href="">Privacy Policy</a></span>
+              <span><a href="">Terms & Conditions</a></span>
+            </div>
+          </div>
+        </section>
       </footer>
-    </div>
+
+      <!-- Footer section ends -->
+      
   </body>
 </html>
