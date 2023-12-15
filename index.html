@@ -1,53 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sensory</title>
-    <link rel="stylesheet" href="dd.css">
-</head>
-<body>
-<div class="body">
-    <div class='header'>
-        <div class='logo'>
-        <img class='logo-icon' src="Assets/Buld#1.png" alt="logo" />
-        <h2>Sensory</h2>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="body">
+      
+      <header class="header">
+        <nav class="navbar">
+          <div class="logo-box">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                opacity="0.3"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M16 22.6667C21.891 22.6667 26.6666 17.891 26.6666 12C26.6666 6.10897 21.891 1.33334 16 1.33334C10.1089 1.33334 5.33331 6.10897 5.33331 12C5.33331 17.891 10.1089 22.6667 16 22.6667Z"
+              />
+              <path
+                opacity="0.3"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M8.71753 12L14.0906 25.8166L15.9679 25.0865L17.8327 25.8232L23.2937 12H8.71753ZM12.6158 14.6667H19.3729L15.9678 23.2861L12.6158 14.6667Z"
+              />
+              <path
+                opacity="0.3"
+                d="M13.3333 29.3333H18.6666V30.6667C18.6666 31.4031 18.0697 32 17.3333 32H14.6666C13.9303 32 13.3333 31.4031 13.3333 30.6667V29.3333Z"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M10.6667 22.6667C10.6667 21.9303 11.2636 21.3333 12 21.3333H20C20.7364 21.3333 21.3334 21.9303 21.3334 22.6667C21.3334 23.4019 20.7383 23.9981 20.0036 24C20.7383 24.002 21.3333 24.5982 21.3333 25.3333C21.3333 26.0697 20.7364 26.6667 20 26.6667C20.7364 26.6667 21.3333 27.2636 21.3333 28C21.3333 28.7364 20.7364 29.3333 20 29.3333H12C11.2636 29.3333 10.6667 28.7364 10.6667 28C10.6667 27.2636 11.2636 26.6667 12 26.6667C11.2636 26.6667 10.6667 26.0697 10.6667 25.3333C10.6667 24.5982 11.2617 24.0019 11.9964 24C11.2617 23.9981 10.6667 23.4019 10.6667 22.6667Z"
+              />
+            </svg>
+            <p>Sensory</p>
+          </div>
+
+          <div class="light-dark-switch">
+            <button id="switch-toggle">
+              <svg
+                id="moon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentcolor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+              </svg>
+              <svg
+                id="sun"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentcolor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+            </button>
+          </div>
+
+          <div class="nav-menu">
+            <button><a href="#">Contribute to this Service</a></button>
+          </div>
+
+          <!-- Mobile Hamburger -->
+
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </header>
+
+      <div class="hero">
+        <div class="left">
+          <h2>Status:</h2>
+          <img src="Assets/on.png" alt="on" />
+          <p>
+            NB: The light status information provided on this website is
+            intended for reference purposes only. While we strive to offer
+            accurate and up-to-date data, we cannot guarantee its absolute
+            precision.{" "}
+          </p>
         </div>
-        
-       <div class='btn'>
-        <button>Contribute to this Service</button>
-       </div>
+        <div class="right">
+          <img src="Assets/light.png" alt="light" />
+        </div>
+      </div>
+      <div class="group">
+        <h2>Light History</h2>
+        <p>Took Light</p>
+        <p>12:30AM 12/07/2023</p>
+        <p>Brought Light</p>
+        <p>2:30AM 12/07/2023</p>
+        <p>Took Light</p>
+        <p>2:30AM 12/07/2023</p>
+      </div>
+      <footer>
+        <h3 class="all">© 2023 Sensory. All Rights Reserved.</h3>
+        <h3 class="privacy">Privacy Policy</h3>
+        <h3 class="terms">Terms & Conditions</h3>
+      </footer>
     </div>
-        <div class="hero">
-          <div class="left">
-            <h2>Status:</h2>
-            <img src="Assets/on.png" alt="on" />
-            <p>
-              NB: The light status information provided on this website is
-              intended for reference purposes only. While we strive to offer
-              accurate and up-to-date data, we cannot guarantee its absolute
-              precision.{" "}
-            </p>
-          </div>
-          <div class="right">
-            <img src="Assets/light.png" alt="light" />
-          </div>
-        </div>
-        <div class="group">
-          <h2>Light History</h2>
-            <p>Took Light</p>
-            <p>12:30AM 12/07/2023</p>
-            <p>Brought Light</p>
-            <p>2:30AM 12/07/2023</p>
-            <p>Took Light</p>
-            <p>2:30AM 12/07/2023</p>
-        </div>
-       <footer>
-          <h3 class="all">© 2023 Sensory. All Rights Reserved.</h3>
-          <h3 class="privacy">Privacy Policy</h3>
-          <h3 class="terms">Terms & Conditions</h3>
-       </footer>
-  </div>
-    
-</body>
+  </body>
 </html>
