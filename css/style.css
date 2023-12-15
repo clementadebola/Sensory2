@@ -27,27 +27,15 @@ section {
     padding: 0 10%;
 }
 
-/* LIGHT / DARK MODE */
-
-body {
-    font-size: 16px;
-	background-color: var(--Background-color);
-    color: var(--Text-color);
+*::selection{
+    background: var(--Text-color);
+    color: var(--Background-color);
 }
 
-.dark-mode {
-    --Background-color: #000;
-    --Text-color: #fff;
-}
+/* Reuseable components */
 
-.light-dark-switch button {
-    background: none;
-    cursor: pointer;
-}
-
-.light-dark-switch svg {
-    color: var(--Text-color);
-    height: 18px;
+section {
+    padding: 0 10%;
 }
  
 /*-- Header --*/
@@ -118,3 +106,58 @@ body {
 }
 
 /*-- Header ends --*/
+
+/* Hero starts */
+
+main {
+    padding-top: 7.4em;
+    margin-bottom: 10em;
+}
+
+.hero-section .sec-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.txt-box .first-txt-box .status {
+    display: flex;
+    align-items: center;
+    gap: .2em;
+    font-size: 5rem;
+    font-weight: 400;
+}
+
+.txt-box .first-txt-box p {
+    width: 90%;
+}
+
+.txt-box .second-txt-box {
+    margin-top: 3em;
+}
+
+.txt-box .second-txt-box h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.second-txt-box .brought-box, .took-box {
+    margin-top: 1em;
+}
+
+.second-txt-box .history-ptag {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+.second-txt-box .brtk-time {
+    margin-right: 1em;
+}
+
+.second-txt-box .brtk-time, .second-txt-box .brtk-date {
+    font-size: .8rem;
+}
+
+/* Hero ends */
